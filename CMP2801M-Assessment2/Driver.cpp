@@ -48,6 +48,8 @@ int main()
 		// implement a string tokenizer to populate the parameters vector 
 		// check function strtok_s
 
+		
+
 		// as a result of the process, parameters[0] should hold your command, followed by your parameters 
 		string command = parameters[0];
 
@@ -98,7 +100,8 @@ int main()
 			cout << c->toString();
 
 		}
-		else if (command.compare("scale") == 0) {
+		else if (command.compare("scale") == 0)
+		{
 			// scale object at index... the scaling needs to be isotropic in case of circle and square 
 			// you may want to check if the index exists or not!
 
@@ -107,7 +110,8 @@ int main()
 			// You may need to use type casting wisely to use polymorphic functionality!
 
 		}
-		else if (command.compare("move") == 0) {
+		else if (command.compare("move") == 0)
+		{
 			// move object at index 
 			int shapeNo; // read from parameters
 			// you may want to check if the index exists or not!
@@ -122,7 +126,8 @@ int main()
 			// if toString is not a virtual function, you may see the base class functionality :(
 			cout << shapes[shapeNo - 1]->toString();
 		}
-		else if (command.compare("display") == 0) {
+		else if (command.compare("display") == 0)
+		{
 			// this is not given in our example, but why don't you implement a display function which shows all objects stored in shapes?
 		}
 

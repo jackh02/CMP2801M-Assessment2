@@ -2,7 +2,7 @@
 
 #include "Point.h"
 
-#include "vector"
+#include <vector>
 
 class Shape
 {
@@ -12,5 +12,11 @@ class Shape
 		bool isCircular;
 		Point* leftTop;
 		double perimeter;
-		vector <Point*> points;
+		vector<Point*> points;
+
+		double calculateArea(vector<Point*>points);
+		double calculatePerimeter(vector<Point*>points);
+		double calculatePoints(vector<Point*>points);
+
+		void toString();
 };
